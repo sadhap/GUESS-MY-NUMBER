@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --selected: #fff200;
+  --text-color: #777;
+  --white: #fff;
+  --dark-text: #1c2042;
+  --error-text: #f00;
+  --success-text: #44bd32;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#d4d3ce, #00c4de);
+}
+
+select {
+  background-color: var(--white);
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 10px;
+  padding: 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  position: absolute;
+  max-width: 100vh;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: rgb(255, 255, 255);
+  padding: 35px 45px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 3px rgb(0, 0, 0);
+  box-shadow: inset 12px 5px 25px rgb(249, 249, 249),-5px -5px 25px black;  
+  /* box-shadow: outset 12px 5px 25px rgb(249, 249, 249),-5px -5px 25px black; */
+  display: grid;
+  justify-items: center;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 481px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 350px) {
+  .container {
+    width: 350px;
+  }
+}
+
+@media (min-width: px) {
+  .container {
+    width: 540px;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 35px;
+}
+
+input[type="text"] {
+  width:100%;
+  font-weight: 600;
+  padding: 5px auto;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 2px solid #202020;
+  color: #4a00f5;
+}
+input[type="number"] {
+  width:40%;
+  font-weight: 600;
+  padding: 5px auto;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius:10px;
+  border: 1px solid #000000;
+  color: #040305;
+}
+button {
+  width: 120px;
+  padding: 15px 0;
+  border-radius: 20px;
+  background-color: #010e37;
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 18px;
+  font-weight: 900;
+  /* margin: 30px auto */
+  margin-top: 100px;
+  box-shadow: inset 12px 5px 25px rgb(255, 255, 255),5px 5px 25px rgb(0, 0, 0);  
+}
+#guess-btn{
+  background-color: #c800e7;
+  margin: 40px auto;
+  box-shadow: outset -12px -5px 25px rgb(0, 0, 0),5px 5px 25px rgb(0, 0, 0);  
+}
+.btnAgain{
+  background-color: #00c4de;
+}
+
+.message {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.secretNumberBtn {
+  font-size: 35px;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  border-width: 1px;
+  color: rgb(79, 67, 67);
+  border-color: #f8f2f1;
+  font-weight: bold;
+  border-radius: 40px;
+   box-shadow: inset 0px 1px 0px 0px #fffdfd;
+   text-shadow: inset 0px 1px 0px #810e05; 
+  
+} 
+
+.secretNumberBtn:hover {
+  background: linear-gradient(#02024f, #f4f9fa);
+}
+input[type="submit"]{
+background-color: #000000;
+color: #f8f2f1;
+margin: 8px auto;
+width: 40%;
+border-radius: 15px;
+font-weight: 800;
+}

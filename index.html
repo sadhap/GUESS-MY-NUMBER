@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS MY number</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/normaliz.css">
+</head>
+<body>
+   
+   <div class="container">    
+    <!-- <button class="btnAgain" value="" id="btnAgain">Restart</button> -->
+   <p>🚥🚥🚥🚥<button class="secretNumberBtn" id="secretNumberBtn">👀</button>🚥🚥🚥🚥</p>
+   <!--input-->    
+   <input type="text"placeholder="Enter your name"class="name"id='name'>
+   <!-- <button class="enter" id="enter">Enter</button> -->
+   <input type="submit" value="Enter" id="enter">
+   <h3 id="msg"></h3>
+   <input type="number" name="Enter a number" id="guess"placeholder="NUM">
+   <p class="message" id="message"></p>
+   <div>
+    <button id="guess-btn">Guess</button>
+    <button class="btnAgain" value="" id="btnAgain">Restart</button>
+   </div>
+ 
+   <h5>Chance: <span id="labelScore">0</span></h5>
+   <h5>High Score : <span id="highScore">0</span></h5>
+   
+   </div>
+<script src="./script.js"></script>
+</body>
+</html>
